@@ -1,0 +1,778 @@
+{
+  "$schema": "heystack-design-system-v1",
+  "$description": "HeyStack Design System — Master Token File (2026 Theme)",
+  "$meta": {
+    "theme": "2026",
+    "source": "Figma Tokens Studio export",
+    "generated": "2026-03-27",
+    "figma_collections": {
+      "theme": "2. Theme (2026 mode)",
+      "color_modes": "3. Color Mode (Light / Dark)",
+      "responsive": "4. Breakpoints (Desktop / Mobile)",
+      "primitives": "1. TailwindCSS (Default)"
+    }
+  },
+  "colors": {
+    "$description": "Semantic color tokens resolved per color mode",
+    "light": {
+      "accent": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "accent-foreground": {
+        "value": "#262626",
+        "tailwind_alias": "tailwind colors/neutral/800"
+      },
+      "background": {
+        "value": "#FAFAF9",
+        "tailwind_alias": "tailwind colors/stone/50"
+      },
+      "border": {
+        "value": "#E5E5E5",
+        "tailwind_alias": "tailwind colors/neutral/200"
+      },
+      "card": {
+        "value": "#FFFFFF",
+        "tailwind_alias": "tailwind colors/base/white"
+      },
+      "card-foreground": {
+        "value": "#262626",
+        "tailwind_alias": "tailwind colors/neutral/800"
+      },
+      "destructive": {
+        "value": "#DC2626",
+        "tailwind_alias": "tailwind colors/red/600"
+      },
+      "destructive-foreground": {
+        "value": "#FEF2F2",
+        "tailwind_alias": "tailwind colors/red/50"
+      },
+      "foreground": {
+        "value": "#262626",
+        "tailwind_alias": "tailwind colors/neutral/800"
+      },
+      "input": {
+        "value": "#E5E7EB",
+        "tailwind_alias": "tailwind colors/gray/200"
+      },
+      "muted": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "muted-foreground": {
+        "value": "#737373",
+        "tailwind_alias": "tailwind colors/neutral/500"
+      },
+      "popover": {
+        "value": "#FAFAFA",
+        "tailwind_alias": "tailwind colors/zinc/50"
+      },
+      "popover-foreground": {
+        "value": "#262626",
+        "tailwind_alias": "tailwind colors/neutral/800"
+      },
+      "primary": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      },
+      "primary-foreground": {
+        "value": "#FAFAFA",
+        "tailwind_alias": "tailwind colors/zinc/50"
+      },
+      "ring": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      },
+      "secondary": {
+        "value": "#E5E7EB",
+        "tailwind_alias": "tailwind colors/gray/200"
+      },
+      "secondary-foreground": {
+        "value": "#27272A",
+        "tailwind_alias": "tailwind colors/zinc/800"
+      },
+      "chart-1": {
+        "value": "#6B21A8",
+        "tailwind_alias": "tailwind colors/purple/800"
+      },
+      "chart-2": {
+        "value": "#0D9488",
+        "tailwind_alias": "tailwind colors/teal/600"
+      },
+      "chart-3": {
+        "value": "#164E63",
+        "tailwind_alias": "tailwind colors/cyan/900"
+      },
+      "chart-4": {
+        "value": "#FBBF24",
+        "tailwind_alias": "tailwind colors/amber/400"
+      },
+      "chart-5": {
+        "value": "#F59E0B",
+        "tailwind_alias": "tailwind colors/amber/500"
+      },
+      "sidebar": {
+        "value": "#FAFAFA",
+        "tailwind_alias": "tailwind colors/zinc/50"
+      },
+      "sidebar-foreground": {
+        "value": "#262626",
+        "tailwind_alias": "tailwind colors/neutral/800"
+      },
+      "sidebar-primary": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#FAFAFA",
+        "tailwind_alias": "tailwind colors/zinc/50"
+      },
+      "sidebar-accent": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#262626",
+        "tailwind_alias": "tailwind colors/neutral/800"
+      },
+      "sidebar-border": {
+        "value": "#E5E5E5",
+        "tailwind_alias": "tailwind colors/neutral/200"
+      },
+      "sidebar-ring": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      }
+    },
+    "dark": {
+      "accent": {
+        "value": "#404040",
+        "tailwind_alias": "tailwind colors/neutral/700"
+      },
+      "accent-foreground": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "background": {
+        "value": "#18181B",
+        "tailwind_alias": "tailwind colors/zinc/900"
+      },
+      "border": {
+        "value": "#FFFFFF1A",
+        "tailwind_alias": null
+      },
+      "card": {
+        "value": "#171717",
+        "tailwind_alias": "tailwind colors/neutral/900"
+      },
+      "card-foreground": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "destructive": {
+        "value": "#F87171",
+        "tailwind_alias": "tailwind colors/red/400"
+      },
+      "destructive-foreground": {
+        "value": "#FEF2F2",
+        "tailwind_alias": "tailwind colors/red/50"
+      },
+      "foreground": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "input": {
+        "value": "#FFFFFF26",
+        "tailwind_alias": null
+      },
+      "muted": {
+        "value": "#404040",
+        "tailwind_alias": "tailwind colors/neutral/700"
+      },
+      "muted-foreground": {
+        "value": "#A1A1AA",
+        "tailwind_alias": "tailwind colors/zinc/400"
+      },
+      "popover": {
+        "value": "#27272A",
+        "tailwind_alias": "tailwind colors/zinc/800"
+      },
+      "popover-foreground": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "primary": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      },
+      "primary-foreground": {
+        "value": "#171717",
+        "tailwind_alias": "tailwind colors/neutral/900"
+      },
+      "ring": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      },
+      "secondary": {
+        "value": "#27272A",
+        "tailwind_alias": "tailwind colors/zinc/800"
+      },
+      "secondary-foreground": {
+        "value": "#D6D3D1",
+        "tailwind_alias": "tailwind colors/stone/300"
+      },
+      "chart-1": {
+        "value": "#A855F7",
+        "tailwind_alias": "tailwind colors/purple/500"
+      },
+      "chart-2": {
+        "value": "#10B981",
+        "tailwind_alias": "tailwind colors/emerald/500"
+      },
+      "chart-3": {
+        "value": "#F59E0B",
+        "tailwind_alias": "tailwind colors/amber/500"
+      },
+      "chart-4": {
+        "value": "#A855F7",
+        "tailwind_alias": "tailwind colors/purple/500"
+      },
+      "chart-5": {
+        "value": "#F43F5E",
+        "tailwind_alias": "tailwind colors/rose/500"
+      },
+      "sidebar": {
+        "value": "#27272A",
+        "tailwind_alias": "tailwind colors/zinc/800"
+      },
+      "sidebar-foreground": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "sidebar-primary": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#FAFAFA",
+        "tailwind_alias": "tailwind colors/zinc/50"
+      },
+      "sidebar-accent": {
+        "value": "#404040",
+        "tailwind_alias": "tailwind colors/neutral/700"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#F4F4F5",
+        "tailwind_alias": "tailwind colors/zinc/100"
+      },
+      "sidebar-border": {
+        "value": "#404040",
+        "tailwind_alias": "tailwind colors/neutral/700"
+      },
+      "sidebar-ring": {
+        "value": "#86198F",
+        "tailwind_alias": "tailwind colors/fuchsia/800"
+      }
+    }
+  },
+  "primitives": {
+    "$description": "Low-level primitive color tokens from Light/Dark mode collections",
+    "light": {
+      "accent": {
+        "value": "#F5F5F5",
+        "description": "Highlight color for active or focused elements",
+        "tailwind_alias": "colors/accent-light"
+      },
+      "accent-foreground": {
+        "value": "#171717",
+        "description": "Text and icons on accent-colored elements",
+        "tailwind_alias": "colors/accent-foreground-light"
+      },
+      "background": {
+        "value": "#FFFFFF",
+        "description": "Main application background",
+        "tailwind_alias": "colors/background-light"
+      },
+      "border": {
+        "value": "#E5E5E5",
+        "description": "Default border color",
+        "tailwind_alias": "colors/border-light"
+      },
+      "card": {
+        "value": "#FFFFFF",
+        "description": "Card component background",
+        "tailwind_alias": "colors/card-light"
+      },
+      "card-foreground": {
+        "value": "#0A0A0A",
+        "description": "Text and icons within cards",
+        "tailwind_alias": "colors/card-foreground-light"
+      },
+      "destructive": {
+        "value": "#DC2626",
+        "description": "Error and deletion action color",
+        "tailwind_alias": "colors/destructive-light"
+      },
+      "destructive-foreground": {
+        "value": "#FEF2F2",
+        "description": "Text and icons on destructive-colored elements",
+        "tailwind_alias": "colors/destructive-foreground-light"
+      },
+      "foreground": {
+        "value": "#0A0A0A",
+        "description": "Primary text color on the background",
+        "tailwind_alias": "colors/foreground-light"
+      },
+      "input": {
+        "value": "#E5E5E5",
+        "description": "Form inputs and button borders",
+        "tailwind_alias": "colors/input-light"
+      },
+      "muted": {
+        "value": "#F5F5F5",
+        "description": "Subdued background for less important elements",
+        "tailwind_alias": "colors/muted-light"
+      },
+      "muted-foreground": {
+        "value": "#737373",
+        "description": "De-emphasized text (captions, labels)",
+        "tailwind_alias": "colors/muted-foreground-light"
+      },
+      "popover": {
+        "value": "#FFFFFF",
+        "description": "Background for dropdown menus and popovers",
+        "tailwind_alias": "colors/popover-light"
+      },
+      "popover-foreground": {
+        "value": "#0A0A0A",
+        "description": "Text and icons within popovers",
+        "tailwind_alias": "colors/popover-foreground-light"
+      },
+      "primary": {
+        "value": "#171717",
+        "description": "Brand color for primary actions (buttons, highlights)",
+        "tailwind_alias": "colors/primary-light"
+      },
+      "primary-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text and icons on primary-colored elements",
+        "tailwind_alias": "colors/primary-foreground-light"
+      },
+      "ring": {
+        "value": "#A3A3A3",
+        "description": "Focus indicator color",
+        "tailwind_alias": "colors/ring-light"
+      },
+      "ring-offset": {
+        "value": "#FFFFFF",
+        "description": "The color of the space between a focused element and its ring outline",
+        "tailwind_alias": "colors/background-light"
+      },
+      "secondary": {
+        "value": "#F5F5F5",
+        "description": "Less prominent action color",
+        "tailwind_alias": "colors/secondary-light"
+      },
+      "secondary-foreground": {
+        "value": "#171717",
+        "description": "Text and icons on secondary-colored elements",
+        "tailwind_alias": "colors/secondary-foreground-light"
+      },
+      "chart-1": {
+        "value": "#EA580C",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-1-light"
+      },
+      "chart-2": {
+        "value": "#0D9488",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-2-light"
+      },
+      "chart-3": {
+        "value": "#164E63",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-3-light"
+      },
+      "chart-4": {
+        "value": "#FBBF24",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-4-light"
+      },
+      "chart-5": {
+        "value": "#F59E0B",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-5-light"
+      },
+      "sidebar": {
+        "value": "#FAFAFA",
+        "description": "Sidebar background",
+        "tailwind_alias": "colors/sidebar-light"
+      },
+      "sidebar-foreground": {
+        "value": "#0A0A0A",
+        "description": "Text and icons within sidebar",
+        "tailwind_alias": "colors/sidebar-foreground-light"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text on sidebar primary elements",
+        "tailwind_alias": "colors/sidebar-primary-foreground-light"
+      },
+      "sidebar-primary": {
+        "value": "#171717",
+        "description": "Primary actions within sidebar",
+        "tailwind_alias": "colors/sidebar-primary-light"
+      },
+      "sidebar-accent": {
+        "value": "#F5F5F5",
+        "description": "Highlighted elements within sidebar",
+        "tailwind_alias": "colors/sidebar-accent-light"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#171717",
+        "description": "Text on sidebar accent elements",
+        "tailwind_alias": "colors/sidebar-accent-foreground-light"
+      },
+      "sidebar-border": {
+        "value": "#E5E5E5",
+        "description": "Sidebar divider lines or borders",
+        "tailwind_alias": "colors/sidebar-border-light"
+      },
+      "sidebar-ring": {
+        "value": "#A3A3A3",
+        "description": "Focus indicators within sidebar",
+        "tailwind_alias": "colors/sidebar-ring-light"
+      },
+      "_alpha": {
+        "5":  { "value": "#FFFFFFF2", "tailwind_alias": null },
+        "10": { "value": "#FFFFFFE5", "tailwind_alias": null },
+        "20": { "value": "#FFFFFFCC", "tailwind_alias": null },
+        "30": { "value": "#FFFFFFB2", "tailwind_alias": null },
+        "40": { "value": "#FFFFFF99", "tailwind_alias": null },
+        "50": { "value": "#FFFFFF80", "tailwind_alias": null },
+        "60": { "value": "#FFFFFF66", "tailwind_alias": null },
+        "70": { "value": "#FFFFFF4D", "tailwind_alias": null },
+        "80": { "value": "#FFFFFF33", "tailwind_alias": null },
+        "90": { "value": "#FFFFFF1A", "tailwind_alias": null }
+      }
+    },
+    "dark": {
+      "accent": {
+        "value": "#404040",
+        "description": "Highlight color for active or focused elements",
+        "tailwind_alias": "colors/accent-dark"
+      },
+      "accent-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text and icons on accent-colored elements",
+        "tailwind_alias": "colors/accent-foreground-dark"
+      },
+      "background": {
+        "value": "#0A0A0A",
+        "description": "Main application background",
+        "tailwind_alias": "colors/background-dark"
+      },
+      "border": {
+        "value": "#FFFFFF1A",
+        "description": "Default border color",
+        "tailwind_alias": "colors/border-dark"
+      },
+      "card": {
+        "value": "#171717",
+        "description": "Card component background",
+        "tailwind_alias": "colors/card-dark"
+      },
+      "card-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text and icons within cards",
+        "tailwind_alias": "colors/card-foreground-dark"
+      },
+      "destructive": {
+        "value": "#F87171",
+        "description": "Error and deletion action color",
+        "tailwind_alias": "colors/destructive-dark"
+      },
+      "destructive-foreground": {
+        "value": "#FEF2F2",
+        "description": "Text and icons on destructive-colored elements",
+        "tailwind_alias": "colors/destructive-foreground-dark"
+      },
+      "foreground": {
+        "value": "#FAFAFA",
+        "description": "Primary text color on the background",
+        "tailwind_alias": "colors/foreground-dark"
+      },
+      "input": {
+        "value": "#FFFFFF26",
+        "description": "Form inputs and button borders",
+        "tailwind_alias": "colors/input-dark"
+      },
+      "muted": {
+        "value": "#262626",
+        "description": "Subdued background for less important elements",
+        "tailwind_alias": "colors/muted-dark"
+      },
+      "muted-foreground": {
+        "value": "#A3A3A3",
+        "description": "De-emphasized text (captions, labels)",
+        "tailwind_alias": "colors/muted-foreground-dark"
+      },
+      "popover": {
+        "value": "#262626",
+        "description": "Background for dropdown menus and popovers",
+        "tailwind_alias": "colors/popover-dark"
+      },
+      "popover-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text and icons within popovers",
+        "tailwind_alias": "colors/popover-foreground-dark"
+      },
+      "primary": {
+        "value": "#E5E5E5",
+        "description": "Brand color for primary actions (buttons, highlights)",
+        "tailwind_alias": "colors/primary-dark"
+      },
+      "primary-foreground": {
+        "value": "#171717",
+        "description": "Text and icons on primary-colored elements",
+        "tailwind_alias": "colors/primary-foreground-dark"
+      },
+      "ring": {
+        "value": "#737373",
+        "description": "Focus indicator color",
+        "tailwind_alias": "colors/ring-dark"
+      },
+      "ring-offset": {
+        "value": "#0A0A0A",
+        "description": "The color of the space between a focused element and its ring outline",
+        "tailwind_alias": "colors/background-dark"
+      },
+      "secondary": {
+        "value": "#262626",
+        "description": "Less prominent action color",
+        "tailwind_alias": "colors/secondary-dark"
+      },
+      "secondary-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text and icons on secondary-colored elements",
+        "tailwind_alias": "colors/secondary-foreground-dark"
+      },
+      "chart-1": {
+        "value": "#1D4ED8",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-1-dark"
+      },
+      "chart-2": {
+        "value": "#10B981",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-2-dark"
+      },
+      "chart-3": {
+        "value": "#F59E0B",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-3-dark"
+      },
+      "chart-4": {
+        "value": "#A855F7",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-4-dark"
+      },
+      "chart-5": {
+        "value": "#F43F5E",
+        "description": "Data visualization colors",
+        "tailwind_alias": "colors/chart-5-dark"
+      },
+      "sidebar": {
+        "value": "#171717",
+        "description": "Sidebar background",
+        "tailwind_alias": "colors/sidebar-dark"
+      },
+      "sidebar-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text and icons within sidebar",
+        "tailwind_alias": "colors/sidebar-foreground-dark"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text on sidebar primary elements",
+        "tailwind_alias": "colors/sidebar-primary-foreground-dark"
+      },
+      "sidebar-primary": {
+        "value": "#1D4ED8",
+        "description": "Primary actions within sidebar",
+        "tailwind_alias": "colors/sidebar-primary-dark"
+      },
+      "sidebar-accent": {
+        "value": "#262626",
+        "description": "Highlighted elements within sidebar",
+        "tailwind_alias": "colors/sidebar-accent-dark"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#FAFAFA",
+        "description": "Text on sidebar accent elements",
+        "tailwind_alias": "colors/sidebar-accent-foreground-dark"
+      },
+      "sidebar-border": {
+        "value": "#FFFFFF1A",
+        "description": "Sidebar divider lines or borders",
+        "tailwind_alias": "colors/sidebar-border-dark"
+      },
+      "sidebar-ring": {
+        "value": "#525252",
+        "description": "Focus indicators within sidebar",
+        "tailwind_alias": "colors/sidebar-ring-dark"
+      },
+      "_alpha": {
+        "5":  { "value": "#0A0A0AF2", "tailwind_alias": null },
+        "10": { "value": "#0A0A0AE5", "tailwind_alias": null },
+        "20": { "value": "#0A0A0ACC", "tailwind_alias": null },
+        "30": { "value": "#0A0A0AB2", "tailwind_alias": null },
+        "40": { "value": "#0A0A0A99", "tailwind_alias": null },
+        "50": { "value": "#0A0A0A80", "tailwind_alias": null },
+        "60": { "value": "#0A0A0A66", "tailwind_alias": null },
+        "70": { "value": "#0A0A0A4D", "tailwind_alias": null },
+        "80": { "value": "#0A0A0A33", "tailwind_alias": null },
+        "90": { "value": "#0A0A0A1A", "tailwind_alias": null }
+      }
+    }
+  },
+  "typography": {
+    "$description": "Font families, weight scale, and type scale from the 2026 theme",
+    "font_families": {
+      "font-sans": "Inter",
+      "font-serif": "Georgia",
+      "font-mono": "Fira Code"
+    },
+    "font_weights": {
+      "thin": 100,
+      "extralight": 200,
+      "light": 300,
+      "normal": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800,
+      "black": 900
+    },
+    "type_scale": {
+      "xs":   { "font-size": 12,  "line-height": 16  },
+      "sm":   { "font-size": 14,  "line-height": 20  },
+      "base": { "font-size": 16,  "line-height": 24  },
+      "lg":   { "font-size": 18,  "line-height": 28  },
+      "xl":   { "font-size": 20,  "line-height": 28  },
+      "2xl":  { "font-size": 24,  "line-height": 32  },
+      "3xl":  { "font-size": 30,  "line-height": 36  },
+      "4xl":  { "font-size": 36,  "line-height": 40  },
+      "5xl":  { "font-size": 48,  "line-height": 48  },
+      "6xl":  { "font-size": 60,  "line-height": 60  },
+      "7xl":  { "font-size": 72,  "line-height": 72  },
+      "8xl":  { "font-size": 96,  "line-height": 96  },
+      "9xl":  { "font-size": 128, "line-height": 128 }
+    }
+  },
+  "responsive": {
+    "$description": "Breakpoint-responsive heading styles and layout spacing (Desktop vs Mobile)",
+    "desktop": {
+      "headings": {
+        "heading-xl": { "font-family": "Geist", "font-size": 60, "line-height": 60, "font-weight": 600, "letter-spacing": -1.5 },
+        "heading-lg": { "font-family": "Geist", "font-size": 48, "line-height": 48, "font-weight": 600, "letter-spacing": -1.2000000476837158 },
+        "heading-md": { "font-family": "Geist", "font-size": 36, "line-height": 40, "font-weight": 600, "letter-spacing": -0.8999999761581421 },
+        "heading-sm": { "font-family": "Geist", "font-size": 24, "line-height": 32, "font-weight": 600, "letter-spacing": -0.6000000238418579 }
+      },
+      "layout": {
+        "container-padding-x": 24,
+        "section-padding-y": 96,
+        "section-title-gap-xl": 24,
+        "section-title-gap-lg": 20,
+        "section-title-gap-md": 20,
+        "section-title-gap-sm": 16
+      }
+    },
+    "mobile": {
+      "headings": {
+        "heading-xl": { "font-family": "Geist", "font-size": 48, "line-height": 48, "font-weight": 600, "letter-spacing": -1.2000000476837158 },
+        "heading-lg": { "font-family": "Geist", "font-size": 36, "line-height": 40, "font-weight": 600, "letter-spacing": -0.8999999761581421 },
+        "heading-md": { "font-family": "Geist", "font-size": 30, "line-height": 36, "font-weight": 600, "letter-spacing": -0.75 },
+        "heading-sm": { "font-family": "Geist", "font-size": 20, "line-height": 28, "font-weight": 600, "letter-spacing": -0.5 }
+      },
+      "layout": {
+        "container-padding-x": 16,
+        "section-padding-y": 64,
+        "section-title-gap-xl": 20,
+        "section-title-gap-lg": 16,
+        "section-title-gap-md": 16,
+        "section-title-gap-sm": 16
+      }
+    }
+  },
+  "spacing": {
+    "0": 0, "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24,
+    "7": 28, "8": 32, "9": 36, "10": 40, "11": 44, "12": 48,
+    "14": 56, "16": 64, "20": 80, "24": 96, "28": 112, "32": 128,
+    "36": 144, "40": 160, "44": 176, "48": 192, "52": 208, "56": 224,
+    "60": 240, "64": 256, "72": 288, "80": 320, "96": 384,
+    "px": 1, "0-5": 2, "1-5": 6, "2-5": 10, "3-5": 14
+  },
+  "breakpoints": {
+    "sm": 640, "md": 768, "lg": 1024, "xl": 1280, "2xl": 1536
+  },
+  "containers": {
+    "3xs": 256, "2xs": 288, "xs": 320, "sm": 384, "md": 448,
+    "lg": 512, "xl": 576, "2xl": 672, "3xl": 768, "4xl": 896,
+    "5xl": 1024, "6xl": 1152, "7xl": 1280
+  },
+  "radius": {
+    "xs": 2, "sm": 6, "md": 8, "lg": 10, "xl": 14, "2xl": 16, "3xl": 24, "4xl": 32
+  },
+  "border_width": {
+    "border-0": 0, "border": 1, "border-2": 2, "border-3": 3,
+    "border-4": 4, "border-5": 5, "border-6": 6, "border-7": 6, "border-8": 8
+  },
+  "opacity": {
+    "opacity-0": 0, "opacity-5": 5, "opacity-10": 10, "opacity-15": 15,
+    "opacity-20": 20, "opacity-25": 25, "opacity-30": 30, "opacity-35": 35,
+    "opacity-40": 40, "opacity-45": 45, "opacity-50": 50, "opacity-55": 55,
+    "opacity-60": 60, "opacity-65": 65, "opacity-70": 70, "opacity-75": 75,
+    "opacity-80": 80, "opacity-85": 85, "opacity-90": 90, "opacity-95": 95,
+    "opacity-100": 100
+  },
+  "effects": {
+    "shadow": {
+      "2xs": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0, "color": "#00000000" },
+      "xs":  { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0, "color": "#00000000" },
+      "sm": {
+        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 1, "blur-radius": 2,  "spread-radius": -1, "color": "#00000000" }
+      },
+      "md": {
+        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 2, "blur-radius": 4,  "spread-radius": -2, "color": "#00000000" }
+      },
+      "lg": {
+        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 4, "blur-radius": 6,  "spread-radius": -4, "color": "#00000000" }
+      },
+      "xl": {
+        "1": { "offset-x": 0, "offset-y": 4,  "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 8,  "blur-radius": 10, "spread-radius": -6, "color": "#00000000" }
+      },
+      "2xl": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0, "color": "#00000000" }
+    },
+    "inset_shadow": {
+      "2xs": { "offset-x": 0, "offset-y": 1, "blur-radius": 0, "spread-radius": 0, "color": "#0000000D" },
+      "xs":  { "offset-x": 0, "offset-y": 1, "blur-radius": 1, "spread-radius": 0, "color": "#0000000D" },
+      "sm":  { "offset-x": 0, "offset-y": 2, "blur-radius": 4, "spread-radius": 0, "color": "#0000000D" }
+    },
+    "drop_shadow": {
+      "xs":  { "offset-x": 0, "offset-y": 1,  "blur-radius": 1,  "spread-radius": 0, "color": "#0000000D" },
+      "sm":  { "offset-x": 0, "offset-y": 1,  "blur-radius": 2,  "spread-radius": 0, "color": "#00000026" },
+      "md":  { "offset-x": 0, "offset-y": 3,  "blur-radius": 3,  "spread-radius": 0, "color": "#0000001F" },
+      "lg":  { "offset-x": 0, "offset-y": 4,  "blur-radius": 4,  "spread-radius": 0, "color": "#00000026" },
+      "xl":  { "offset-x": 0, "offset-y": 9,  "blur-radius": 7,  "spread-radius": 0, "color": "#0000001A" },
+      "2xl": { "offset-x": 0, "offset-y": 25, "blur-radius": 25, "spread-radius": 0, "color": "#00000026" }
+    },
+    "blur": {
+      "xs": 4, "sm": 8, "md": 12, "lg": 16, "xl": 24, "2xl": 40, "3xl": 64
+    }
+  }
+}

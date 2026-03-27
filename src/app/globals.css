@@ -1,26 +1,233 @@
 @import "tailwindcss";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Georgia", ui-serif, serif;
+  --font-mono: "Fira Code", ui-monospace, monospace;
+  --font-heading: "Geist", ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ─── HeyStack 2026 Theme — Light Mode ─── */
+
+:root {
+  --radius: 0.625rem;
+  --accent: #F4F4F5;
+  --accent-foreground: #262626;
+  --background: #FAFAF9;
+  --border: #E5E5E5;
+  --card: #FFFFFF;
+  --card-foreground: #262626;
+  --destructive: #DC2626;
+  --destructive-foreground: #FEF2F2;
+  --foreground: #262626;
+  --input: #E5E7EB;
+  --muted: #F4F4F5;
+  --muted-foreground: #737373;
+  --popover: #FAFAFA;
+  --popover-foreground: #262626;
+  --primary: #86198F;
+  --primary-foreground: #FAFAFA;
+  --ring: #86198F;
+  --secondary: #E5E7EB;
+  --secondary-foreground: #27272A;
+  --chart-1: #6B21A8;
+  --chart-2: #0D9488;
+  --chart-3: #164E63;
+  --chart-4: #FBBF24;
+  --chart-5: #F59E0B;
+  --sidebar: #FAFAFA;
+  --sidebar-foreground: #262626;
+  --sidebar-primary: #86198F;
+  --sidebar-primary-foreground: #FAFAFA;
+  --sidebar-accent: #F4F4F5;
+  --sidebar-accent-foreground: #262626;
+  --sidebar-border: #E5E5E5;
+  --sidebar-ring: #86198F;
+}
+
+/* ─── HeyStack 2026 Theme — Dark Mode ─── */
+
+.dark {
+  --accent: #404040;
+  --accent-foreground: #F4F4F5;
+  --background: #18181B;
+  --border: #FFFFFF1A;
+  --card: #171717;
+  --card-foreground: #F4F4F5;
+  --destructive: #F87171;
+  --destructive-foreground: #FEF2F2;
+  --foreground: #F4F4F5;
+  --input: #FFFFFF26;
+  --muted: #404040;
+  --muted-foreground: #A1A1AA;
+  --popover: #27272A;
+  --popover-foreground: #F4F4F5;
+  --primary: #86198F;
+  --primary-foreground: #171717;
+  --ring: #86198F;
+  --secondary: #27272A;
+  --secondary-foreground: #D6D3D1;
+  --chart-1: #A855F7;
+  --chart-2: #10B981;
+  --chart-3: #F59E0B;
+  --chart-4: #A855F7;
+  --chart-5: #F43F5E;
+  --sidebar: #27272A;
+  --sidebar-foreground: #F4F4F5;
+  --sidebar-primary: #86198F;
+  --sidebar-primary-foreground: #FAFAFA;
+  --sidebar-accent: #404040;
+  --sidebar-accent-foreground: #F4F4F5;
+  --sidebar-border: #404040;
+  --sidebar-ring: #86198F;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ─── Responsive heading utilities ───────────────────────────────────────── */
+/* Source: tokens › responsive.desktop/mobile.headings                       */
+/* Mobile-first: mobile values as default, desktop at md breakpoint          */
+
+@layer utilities {
+  .heading-xl {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 3rem;           /* mobile: 48px */
+    line-height: 1;
+    letter-spacing: -0.075rem; /* -1.2px */
+  }
+
+  .heading-lg {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 2.25rem;             /* mobile: 36px */
+    line-height: 1.111;
+    letter-spacing: -0.05625rem;   /* -0.9px */
+  }
+
+  .heading-md {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.875rem;            /* mobile: 30px */
+    line-height: 1.2;
+    letter-spacing: -0.046875rem;  /* -0.75px */
+  }
+
+  .heading-sm {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 1.25rem;          /* mobile: 20px */
+    line-height: 1.4;
+    letter-spacing: -0.03125rem; /* -0.5px */
+  }
+
+  @media (min-width: 768px) {
+    .heading-xl {
+      font-size: 3.75rem;          /* desktop: 60px */
+      letter-spacing: -0.09375rem; /* -1.5px */
+    }
+
+    .heading-lg {
+      font-size: 3rem;           /* desktop: 48px */
+      line-height: 1;
+      letter-spacing: -0.075rem; /* -1.2px */
+    }
+
+    .heading-md {
+      font-size: 2.25rem;           /* desktop: 36px */
+      line-height: 1.111;
+      letter-spacing: -0.05625rem; /* -0.9px */
+    }
+
+    .heading-sm {
+      font-size: 1.5rem;           /* desktop: 24px */
+      line-height: 1.333;
+      letter-spacing: -0.0375rem; /* -0.6px */
+    }
+  }
+
+  /* ─── Layout spacing utilities ─────────────────────────────────────────── */
+  /* Source: tokens › responsive.desktop/mobile.layout                       */
+
+  .container-px {
+    padding-left: 1rem;   /* mobile: 16px */
+    padding-right: 1rem;
+  }
+
+  .section-py {
+    padding-top: 4rem;    /* mobile: 64px */
+    padding-bottom: 4rem;
+  }
+
+  .section-title-gap-xl { gap: 1.25rem; } /* mobile: 20px */
+  .section-title-gap-lg { gap: 1rem; }    /* mobile: 16px */
+  .section-title-gap-md { gap: 1rem; }    /* mobile: 16px */
+  .section-title-gap-sm { gap: 1rem; }    /* mobile: 16px */
+
+  @media (min-width: 768px) {
+    .container-px {
+      padding-left: 1.5rem;  /* desktop: 24px */
+      padding-right: 1.5rem;
+    }
+
+    .section-py {
+      padding-top: 6rem;    /* desktop: 96px */
+      padding-bottom: 6rem;
+    }
+
+    .section-title-gap-xl { gap: 1.5rem; }  /* 24px */
+    .section-title-gap-lg { gap: 1.25rem; } /* 20px */
+    .section-title-gap-md { gap: 1.25rem; } /* 20px */
+    .section-title-gap-sm { gap: 1rem; }    /* 16px */
+  }
 }
