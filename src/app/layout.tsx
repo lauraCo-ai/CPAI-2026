@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Inter, Fira_Code } from "next/font/google";
+import { AppShell } from "@/components/app-shell";
 import "./globals.css";
 
 const inter = Inter({
@@ -32,7 +33,9 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${geist.variable} ${firaCode.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <AppShell>{children}</AppShell>
+      </body>
     </html>
   );
 }
