@@ -887,8 +887,8 @@ function ShareDocumentCard() {
 /* ================================================================== */
 export default function DashboardPage() {
   return (
-    <div className="mx-auto max-w-screen-2xl p-6">
-      <div className="grid grid-cols-[1fr_1fr_1.7fr] gap-4">
+    <div className="mx-auto max-w-screen-2xl px-4 py-6 md:px-6">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-[1fr_1fr_1.7fr]">
         {/* Column 1 */}
         <div className="flex flex-col gap-4">
           <TotalRevenueCard />
@@ -905,10 +905,10 @@ export default function DashboardPage() {
           <ReportIssueCard />
         </div>
 
-        {/* Column 3 */}
-        <div className="flex flex-col gap-4">
+        {/* Column 3 — spans full width on md, own column on xl */}
+        <div className="flex flex-col gap-4 md:col-span-2 xl:col-span-1">
           {/* Calendar + Move Goal side by side */}
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row">
             <MiniCalendarCard />
             <MoveGoalCard />
           </div>

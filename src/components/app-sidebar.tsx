@@ -14,13 +14,27 @@ const navItems = [
 interface AppSidebarProps {
   isDark: boolean;
   onToggleDark: (value: boolean) => void;
+  /** "fixed" renders a fixed-position left sidebar; "inline" fills its parent (e.g. inside a Sheet). */
+  variant?: "fixed" | "inline";
+  /** Called after a nav link is clicked — useful to close the mobile drawer. */
+  onNavigate?: () => void;
 }
 
-export function AppSidebar({ isDark, onToggleDark }: AppSidebarProps) {
+export function AppSidebar({
+  isDark,
+  onToggleDark,
+  variant = "fixed",
+  onNavigate,
+}: AppSidebarProps) {
   const pathname = usePathname();
 
+  const wrapperClass =
+    variant === "fixed"
+      ? "fixed inset-y-0 left-0 z-40 flex w-60 flex-col border-r border-sidebar-border bg-sidebar"
+      : "flex h-full w-full flex-col bg-sidebar";
+
   return (
-    <aside className="fixed inset-y-0 left-0 z-40 flex w-60 flex-col border-r border-sidebar-border bg-sidebar">
+    <aside className={wrapperClass}>
       {/* Brand */}
       <div className="flex items-center gap-3 px-5 py-5">
         <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
@@ -44,6 +58,7 @@ export function AppSidebar({ isDark, onToggleDark }: AppSidebarProps) {
             <Link
               key={item.href}
               href={item.href}
+              onClick={onNavigate}
               className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                 isActive
                   ? "bg-sidebar-accent text-sidebar-accent-foreground"
