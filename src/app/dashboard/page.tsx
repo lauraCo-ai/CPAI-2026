@@ -78,7 +78,7 @@ const revenueChartConfig = {
 
 function TotalRevenueCard() {
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader className="pb-2">
         <CardDescription className="text-sm text-muted-foreground">
           Total Revenue
@@ -121,7 +121,7 @@ function UpgradeSubscriptionCard() {
   const [termsChecked, setTermsChecked] = useState(false);
 
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-lg font-semibold">
           Upgrade your subscription
@@ -251,7 +251,7 @@ function TeamMembersCard() {
   ];
 
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">Team Members</CardTitle>
         <CardDescription>
@@ -295,7 +295,7 @@ function CookieSettingsCard() {
   const [functional, setFunctional] = useState(false);
 
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">Cookie Settings</CardTitle>
         <CardDescription>
@@ -354,7 +354,7 @@ const subscriptionChartConfig = {
 
 function SubscriptionsCard() {
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <CardDescription className="text-sm text-muted-foreground">
@@ -398,7 +398,7 @@ function SubscriptionsCard() {
 /* ------------------------------------------------------------------ */
 function CreateAccountCard() {
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader className="text-center">
         <CardTitle className="text-2xl font-semibold">
           Create an account
@@ -466,7 +466,7 @@ function ChatCard() {
   ];
 
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader className="flex-row items-center gap-3 space-y-0">
         <Avatar className="h-9 w-9">
           <AvatarFallback className="text-xs">SD</AvatarFallback>
@@ -514,7 +514,7 @@ function ChatCard() {
 /* ------------------------------------------------------------------ */
 function ReportIssueCard() {
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">
           Report an issue
@@ -578,7 +578,7 @@ function MiniCalendarCard() {
   );
 
   return (
-    <Card className="rounded-xl shadow-sm flex-1 flex items-center justify-center">
+    <Card className="rounded-xl flex-1 flex items-center justify-center">
       <CardContent className="p-3">
         <Calendar
           mode="single"
@@ -619,7 +619,7 @@ function MoveGoalCard() {
   const [calories, setCalories] = useState(350);
 
   return (
-    <Card className="rounded-xl shadow-sm flex-1">
+    <Card className="rounded-xl flex-1">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">Move Goal</CardTitle>
         <CardDescription>Set your daily activity goal.</CardDescription>
@@ -686,7 +686,7 @@ const exerciseChartConfig = {
 
 function ExerciseMinutesCard() {
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">
           Exercise Minutes
@@ -747,7 +747,7 @@ function PaymentsCard() {
   };
 
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-xl font-semibold">Payments</CardTitle>
         <CardDescription>Manage your payments.</CardDescription>
@@ -822,7 +822,7 @@ function ShareDocumentCard() {
   ];
 
   return (
-    <Card className="rounded-xl shadow-sm">
+    <Card className="rounded-xl shadow-none">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">
           Share this document

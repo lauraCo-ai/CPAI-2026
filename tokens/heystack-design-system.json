@@ -739,20 +739,20 @@
     "opacity-100": 100
   },
   "effects": {
-    "$shadow-note": "Values sourced from Figma 'shadcn_ui kit' Default mode (the 2026 mode had transparent colors — these are the visible originals)",
+    "$shadow-note": "2026 theme uses transparent shadows — cards rely on borders for separation, not elevation",
     "shadow": {
-      "xs":  { "offset-x": 0, "offset-y": 1, "blur-radius": 2, "spread-radius": 0, "color": "#0000000D" },
+      "xs":  { "offset-x": 0, "offset-y": 1, "blur-radius": 2, "spread-radius": 0, "color": "#00000000" },
       "sm": {
-        "1": { "offset-x": 0, "offset-y": 1, "blur-radius": 3, "spread-radius": 0,  "color": "#0000001A" },
-        "2": { "offset-x": 0, "offset-y": 1, "blur-radius": 2, "spread-radius": -1, "color": "#0000001A" }
+        "1": { "offset-x": 0, "offset-y": 1, "blur-radius": 3, "spread-radius": 0,  "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 1, "blur-radius": 2, "spread-radius": -1, "color": "#00000000" }
       },
       "md": {
-        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 6,  "spread-radius": -1, "color": "#0000001A" },
-        "2": { "offset-x": 0, "offset-y": 2, "blur-radius": 4,  "spread-radius": -2, "color": "#0000001A" }
+        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 6,  "spread-radius": -1, "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 2, "blur-radius": 4,  "spread-radius": -2, "color": "#00000000" }
       },
       "lg": {
-        "1": { "offset-x": 0, "offset-y": 10, "blur-radius": 15, "spread-radius": -3, "color": "#0000001A" },
-        "2": { "offset-x": 0, "offset-y": 4,  "blur-radius": 6,  "spread-radius": -4, "color": "#0000001A" }
+        "1": { "offset-x": 0, "offset-y": 10, "blur-radius": 15, "spread-radius": -3, "color": "#00000000" },
+        "2": { "offset-x": 0, "offset-y": 4,  "blur-radius": 6,  "spread-radius": -4, "color": "#00000000" }
       }
     },
     "inset_shadow": {
