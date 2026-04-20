@@ -578,7 +578,7 @@ function MiniCalendarCard() {
   );
 
   return (
-    <Card className="rounded-xl flex-1 flex items-center justify-center">
+    <Card className="rounded-xl shadow-none flex-1 flex items-center justify-center">
       <CardContent className="p-3">
         <Calendar
           mode="single"
@@ -619,7 +619,7 @@ function MoveGoalCard() {
   const [calories, setCalories] = useState(350);
 
   return (
-    <Card className="rounded-xl flex-1">
+    <Card className="rounded-xl shadow-none flex-1">
       <CardHeader>
         <CardTitle className="text-sm font-semibold">Move Goal</CardTitle>
         <CardDescription>Set your daily activity goal.</CardDescription>
