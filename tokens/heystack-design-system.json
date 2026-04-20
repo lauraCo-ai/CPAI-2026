@@ -206,8 +206,9 @@
         "tailwind_alias": "tailwind colors/fuchsia/800"
       },
       "primary-foreground": {
-        "value": "#171717",
-        "tailwind_alias": "tailwind colors/neutral/900"
+        "value": "#FAFAFA",
+        "tailwind_alias": "tailwind colors/zinc/50",
+        "$note": "Overridden from Figma 2026 theme (#171717 neutral/900) to fix contrast on primary buttons"
       },
       "ring": {
         "value": "#86198F",
@@ -533,9 +534,10 @@
         "tailwind_alias": "colors/primary-dark"
       },
       "primary-foreground": {
-        "value": "#171717",
+        "value": "#FAFAFA",
         "description": "Text and icons on primary-colored elements",
-        "tailwind_alias": "colors/primary-foreground-dark"
+        "tailwind_alias": "colors/primary-foreground-dark",
+        "$note": "Overridden from Figma 2026 theme (#171717) to fix contrast on primary buttons"
       },
       "ring": {
         "value": "#737373",
