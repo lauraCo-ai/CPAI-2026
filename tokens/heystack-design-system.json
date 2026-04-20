@@ -737,26 +737,21 @@
     "opacity-100": 100
   },
   "effects": {
+    "$shadow-note": "Values sourced from Figma 'shadcn_ui kit' Default mode (the 2026 mode had transparent colors — these are the visible originals)",
     "shadow": {
-      "2xs": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0, "color": "#00000000" },
-      "xs":  { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0, "color": "#00000000" },
+      "xs":  { "offset-x": 0, "offset-y": 1, "blur-radius": 2, "spread-radius": 0, "color": "#0000000D" },
       "sm": {
-        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
-        "2": { "offset-x": 0, "offset-y": 1, "blur-radius": 2,  "spread-radius": -1, "color": "#00000000" }
+        "1": { "offset-x": 0, "offset-y": 1, "blur-radius": 3, "spread-radius": 0,  "color": "#0000001A" },
+        "2": { "offset-x": 0, "offset-y": 1, "blur-radius": 2, "spread-radius": -1, "color": "#0000001A" }
       },
       "md": {
-        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
-        "2": { "offset-x": 0, "offset-y": 2, "blur-radius": 4,  "spread-radius": -2, "color": "#00000000" }
+        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 6,  "spread-radius": -1, "color": "#0000001A" },
+        "2": { "offset-x": 0, "offset-y": 2, "blur-radius": 4,  "spread-radius": -2, "color": "#0000001A" }
       },
       "lg": {
-        "1": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
-        "2": { "offset-x": 0, "offset-y": 4, "blur-radius": 6,  "spread-radius": -4, "color": "#00000000" }
-      },
-      "xl": {
-        "1": { "offset-x": 0, "offset-y": 4,  "blur-radius": 10, "spread-radius": 0,  "color": "#00000000" },
-        "2": { "offset-x": 0, "offset-y": 8,  "blur-radius": 10, "spread-radius": -6, "color": "#00000000" }
-      },
-      "2xl": { "offset-x": 0, "offset-y": 4, "blur-radius": 10, "spread-radius": 0, "color": "#00000000" }
+        "1": { "offset-x": 0, "offset-y": 10, "blur-radius": 15, "spread-radius": -3, "color": "#0000001A" },
+        "2": { "offset-x": 0, "offset-y": 4,  "blur-radius": 6,  "spread-radius": -4, "color": "#0000001A" }
+      }
     },
     "inset_shadow": {
       "2xs": { "offset-x": 0, "offset-y": 1, "blur-radius": 0, "spread-radius": 0, "color": "#0000000D" },
