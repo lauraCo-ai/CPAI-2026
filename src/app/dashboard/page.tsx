@@ -73,7 +73,7 @@ const revenueData = [
 ];
 
 const revenueChartConfig = {
-  revenue: { label: "Revenue", color: "hsl(var(--primary))" },
+  revenue: { label: "Revenue", color: "var(--primary)" },
 } satisfies ChartConfig;
 
 function TotalRevenueCard() {
@@ -349,7 +349,7 @@ const subscriptionData = [
 ];
 
 const subscriptionChartConfig = {
-  subs: { label: "Subscriptions", color: "hsl(var(--primary))" },
+  subs: { label: "Subscriptions", color: "var(--primary)" },
 } satisfies ChartConfig;
 
 function SubscriptionsCard() {
@@ -578,17 +578,13 @@ function MiniCalendarCard() {
   );
 
   return (
-    <Card className="rounded-xl shadow-none flex-1 flex items-center justify-center">
-      <CardContent className="p-3">
-        <Calendar
-          mode="single"
-          selected={date}
-          onSelect={setDate}
-          defaultMonth={new Date(2025, 0)}
-          className="rounded-md"
-        />
-      </CardContent>
-    </Card>
+    <Calendar
+      mode="single"
+      selected={date}
+      onSelect={setDate}
+      defaultMonth={new Date(2025, 0)}
+      className="flex-1 rounded-xl border bg-card"
+    />
   );
 }
 
@@ -612,7 +608,7 @@ const moveGoalData = [
 ];
 
 const moveGoalChartConfig = {
-  cal: { label: "Calories", color: "hsl(var(--primary))" },
+  cal: { label: "Calories", color: "var(--primary)" },
 } satisfies ChartConfig;
 
 function MoveGoalCard() {
@@ -680,8 +676,8 @@ const exerciseData = [
 ];
 
 const exerciseChartConfig = {
-  thisYear: { label: "This Year", color: "hsl(var(--primary))" },
-  lastYear: { label: "Last Year", color: "hsl(var(--muted-foreground))" },
+  thisYear: { label: "This Year", color: "var(--primary)" },
+  lastYear: { label: "Last Year", color: "var(--muted-foreground)" },
 } satisfies ChartConfig;
 
 function ExerciseMinutesCard() {
