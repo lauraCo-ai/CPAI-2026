@@ -72,16 +72,16 @@
         "tailwind_alias": "tailwind colors/neutral/800"
       },
       "primary": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       },
       "primary-foreground": {
         "value": "#FAFAFA",
         "tailwind_alias": "tailwind colors/zinc/50"
       },
       "ring": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       },
       "secondary": {
         "value": "#E5E7EB",
@@ -120,8 +120,8 @@
         "tailwind_alias": "tailwind colors/neutral/800"
       },
       "sidebar-primary": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       },
       "sidebar-primary-foreground": {
         "value": "#FAFAFA",
@@ -140,8 +140,8 @@
         "tailwind_alias": "tailwind colors/neutral/200"
       },
       "sidebar-ring": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       }
     },
     "dark": {
@@ -202,8 +202,8 @@
         "tailwind_alias": "tailwind colors/zinc/100"
       },
       "primary": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       },
       "primary-foreground": {
         "value": "#FAFAFA",
@@ -211,8 +211,8 @@
         "$note": "Overridden from Figma 2026 theme (#171717 neutral/900) to fix contrast on primary buttons"
       },
       "ring": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       },
       "secondary": {
         "value": "#27272A",
@@ -251,8 +251,8 @@
         "tailwind_alias": "tailwind colors/zinc/100"
       },
       "sidebar-primary": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       },
       "sidebar-primary-foreground": {
         "value": "#FAFAFA",
@@ -271,8 +271,8 @@
         "tailwind_alias": "tailwind colors/neutral/700"
       },
       "sidebar-ring": {
-        "value": "#86198F",
-        "tailwind_alias": "tailwind colors/fuchsia/800"
+        "value": "#0075E2",
+        "tailwind_alias": "custom CoPilot blue (closest: tailwind colors/sky/600)"
       }
     }
   },

@@ -93,9 +93,9 @@
   --muted-foreground: #737373;
   --popover: #FAFAFA;
   --popover-foreground: #262626;
-  --primary: #86198F;
+  --primary: #0075E2;
   --primary-foreground: #FAFAFA;
-  --ring: #86198F;
+  --ring: #0075E2;
   --secondary: #E5E7EB;
   --secondary-foreground: #27272A;
   --chart-1: #6B21A8;
@@ -105,12 +105,12 @@
   --chart-5: #F59E0B;
   --sidebar: #FAFAFA;
   --sidebar-foreground: #262626;
-  --sidebar-primary: #86198F;
+  --sidebar-primary: #0075E2;
   --sidebar-primary-foreground: #FAFAFA;
   --sidebar-accent: #F4F4F5;
   --sidebar-accent-foreground: #262626;
   --sidebar-border: #E5E5E5;
-  --sidebar-ring: #86198F;
+  --sidebar-ring: #0075E2;
 }
 
 /* ─── HeyStack 2026 Theme — Dark Mode ─── */
@@ -130,9 +130,9 @@
   --muted-foreground: #A1A1AA;
   --popover: #27272A;
   --popover-foreground: #F4F4F5;
-  --primary: #86198F;
+  --primary: #0075E2;
   --primary-foreground: #FAFAFA;
-  --ring: #86198F;
+  --ring: #0075E2;
   --secondary: #27272A;
   --secondary-foreground: #D6D3D1;
   --chart-1: #A855F7;
@@ -142,12 +142,12 @@
   --chart-5: #F43F5E;
   --sidebar: #27272A;
   --sidebar-foreground: #F4F4F5;
-  --sidebar-primary: #86198F;
+  --sidebar-primary: #0075E2;
   --sidebar-primary-foreground: #FAFAFA;
   --sidebar-accent: #404040;
   --sidebar-accent-foreground: #F4F4F5;
   --sidebar-border: #404040;
-  --sidebar-ring: #86198F;
+  --sidebar-ring: #0075E2;
 }
 
 @layer base {

@@ -10,7 +10,7 @@ Semantic color tokens are in `colors.light` and `colors.dark`. Use the semantic 
 
 | Token | Light | Dark | Usage |
 |---|---|---|---|
-| `primary` | `#86198F` (fuchsia-800) | `#86198F` | Buttons, links, focus rings |
+| `primary` | `#0075E2` (CoPilot blue, custom — closest: sky-600) | `#0075E2` | Buttons, links, focus rings |
 | `background` | `#FAFAF9` (stone-50) | `#18181B` (zinc-900) | Page background |
 | `foreground` | `#262626` (neutral-800) | `#F4F4F5` (zinc-100) | Body text |
 | `card` | `#FFFFFF` | `#171717` (neutral-900) | Card surfaces |
@@ -19,7 +19,7 @@ Semantic color tokens are in `colors.light` and `colors.dark`. Use the semantic 
 | `border` | `#E5E5E5` (neutral-200) | `#FFFFFF1A` (white/10%) | Borders, dividers |
 | `destructive` | `#DC2626` (red-600) | `#F87171` (red-400) | Error states |
 | `secondary` | `#E5E7EB` (gray-200) | `#27272A` (zinc-800) | Secondary buttons |
-| `ring` | `#86198F` | `#86198F` | Focus ring |
+| `ring` | `#0075E2` | `#0075E2` | Focus ring |
 
 Chart palette: `chart-1` through `chart-5` — purple, teal, cyan, amber, amber/rose.
 
@@ -144,7 +144,7 @@ node scripts/lint-tokens.mjs src
 ```
 
 The linter catches:
-- **Errors**: Arbitrary Tailwind colors (`bg-[#86198F]`), hardcoded hex in inline styles
+- **Errors**: Arbitrary Tailwind colors (`bg-[#0075E2]`), hardcoded hex in inline styles
 - **Warnings**: Arbitrary spacing (`p-[24px]`), arbitrary radius (`rounded-[8px]`), arbitrary font sizes (`text-[36px]`), hardcoded px in inline styles
 
 It reads from `tokens/heystack-design-system.json` and suggests the correct token name for each violation. Fix all errors; fix warnings where a token exists.
