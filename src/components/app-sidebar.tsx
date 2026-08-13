@@ -11,6 +11,7 @@ import {
   Layers,
   ChevronDown,
   BookOpen,
+  FlaskConical,
 } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
 import { Separator } from "@/components/ui/separator";
@@ -76,6 +77,20 @@ export function AppSidebar({
         >
           <LayoutDashboard className="h-4 w-4" />
           Dashboard
+        </Link>
+
+        {/* Playground */}
+        <Link
+          href="/playground"
+          onClick={onNavigate}
+          className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+            pathname === "/playground"
+              ? "bg-sidebar-accent text-sidebar-accent-foreground"
+              : "text-sidebar-foreground hover:bg-sidebar-accent/50"
+          }`}
+        >
+          <FlaskConical className="h-4 w-4" />
+          Playground
         </Link>
 
         {/* Design System collapsible */}
