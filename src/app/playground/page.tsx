@@ -40,7 +40,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Search, Plus, Workflow, ArrowRight } from "lucide-react";
+import { Search, Plus, Workflow, ArrowRight, Moon } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
 /*  Sample data — mirrors the CoPilot Campaigns screen                 */
@@ -94,22 +94,40 @@ export default function PlaygroundPage() {
       {/* Explorations */}
       <section className="space-y-4">
         <h2 className="heading-sm">Explorations</h2>
-        <Link href="/playground/workflows" className="block max-w-md">
-          <Card className="rounded-xl hover:border-primary/50 transition-colors">
-            <CardContent className="flex items-center gap-4 pt-6">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary">
-                <Workflow className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <div className="min-w-0 flex-1">
-                <p className="text-sm font-semibold">Workflows</p>
-                <p className="text-sm text-muted-foreground">
-                  Workflow platform — compose, approve, and track executions.
-                </p>
-              </div>
-              <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground" />
-            </CardContent>
-          </Card>
-        </Link>
+        <div className="grid gap-4 md:grid-cols-2">
+          <Link href="/playground/workflows" className="block">
+            <Card className="h-full rounded-xl hover:border-primary/50 transition-colors">
+              <CardContent className="flex items-center gap-4 pt-6">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary">
+                  <Workflow className="h-5 w-5 text-primary-foreground" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold">Workflows</p>
+                  <p className="text-sm text-muted-foreground">
+                    Workflow platform — compose, approve, and track executions.
+                  </p>
+                </div>
+                <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground" />
+              </CardContent>
+            </Card>
+          </Link>
+          <Link href="/playground/wake-up" className="block">
+            <Card className="h-full rounded-xl hover:border-primary/50 transition-colors">
+              <CardContent className="flex items-center gap-4 pt-6">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary">
+                  <Moon className="h-5 w-5 text-primary-foreground" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-semibold">Wake up old opportunities</p>
+                  <p className="text-sm text-muted-foreground">
+                    Pod 4 MVP play — discover, set up, approve, follow along.
+                  </p>
+                </div>
+                <ArrowRight className="h-4 w-4 shrink-0 text-muted-foreground" />
+              </CardContent>
+            </Card>
+          </Link>
+        </div>
       </section>
 
       {/* Primary color sampler */}

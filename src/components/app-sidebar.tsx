@@ -22,6 +22,13 @@ import {
 } from "@/components/ui/collapsible";
 import { componentsRegistry } from "@/lib/components-registry";
 
+/** Playground explorations shown in the sidebar. Add new subpages here. */
+const playgroundPages = [
+  { name: "Overview", href: "/playground" },
+  { name: "Workflows", href: "/playground/workflows" },
+  { name: "Wake up old opportunities", href: "/playground/wake-up" },
+];
+
 interface AppSidebarProps {
   isDark: boolean;
   onToggleDark: (value: boolean) => void;
@@ -40,6 +47,8 @@ export function AppSidebar({
   const pathname = usePathname();
   const isDesignSystemSection = pathname.startsWith("/design-system");
   const [designSystemOpen, setDesignSystemOpen] = useState(isDesignSystemSection);
+  const isPlaygroundSection = pathname.startsWith("/playground");
+  const [playgroundOpen, setPlaygroundOpen] = useState(isPlaygroundSection);
 
   const wrapperClass =
     variant === "fixed"
@@ -79,19 +88,48 @@ export function AppSidebar({
           Dashboard
         </Link>
 
-        {/* Playground */}
-        <Link
-          href="/playground"
-          onClick={onNavigate}
-          className={`flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
-            pathname === "/playground"
-              ? "bg-sidebar-accent text-sidebar-accent-foreground"
-              : "text-sidebar-foreground hover:bg-sidebar-accent/50"
-          }`}
-        >
-          <FlaskConical className="h-4 w-4" />
-          Playground
-        </Link>
+        {/* Playground collapsible */}
+        <Collapsible open={playgroundOpen} onOpenChange={setPlaygroundOpen}>
+          <CollapsibleTrigger asChild>
+            <button
+              className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                isPlaygroundSection
+                  ? "text-sidebar-foreground"
+                  : "text-sidebar-foreground hover:bg-sidebar-accent/50"
+              }`}
+            >
+              <FlaskConical className="h-4 w-4 shrink-0" />
+              <span className="flex-1 text-left">Playground</span>
+              <ChevronDown
+                className={`h-3.5 w-3.5 shrink-0 transition-transform ${
+                  playgroundOpen ? "rotate-180" : ""
+                }`}
+              />
+            </button>
+          </CollapsibleTrigger>
+
+          <CollapsibleContent>
+            <div className="mt-1 space-y-0.5">
+              {playgroundPages.map((page) => {
+                const isActive = pathname === page.href;
+                return (
+                  <Link
+                    key={page.href}
+                    href={page.href}
+                    onClick={onNavigate}
+                    className={`flex items-center rounded-lg pl-9 pr-3 py-1.5 text-xs transition-colors ${
+                      isActive
+                        ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
+                        : "text-sidebar-foreground/70 hover:bg-sidebar-accent/50 hover:text-sidebar-foreground"
+                    }`}
+                  >
+                    {page.name}
+                  </Link>
+                );
+              })}
+            </div>
+          </CollapsibleContent>
+        </Collapsible>
 
         {/* Design System collapsible */}
         <Collapsible open={designSystemOpen} onOpenChange={setDesignSystemOpen}>
