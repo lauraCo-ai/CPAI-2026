@@ -34,7 +34,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Separator } from "@/components/ui/separator";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -213,17 +212,13 @@ export default function WorkflowsPage() {
         </div>
       </div>
 
-      {/* Stats */}
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      {/* Stats — plain numbers; spacing does the grouping, no tile per metric */}
+      <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
         {stats.map((stat) => (
-          <Card key={stat.label} className="rounded-xl">
-            <CardHeader className="pb-2">
-              <CardDescription>{stat.label}</CardDescription>
-              <CardTitle className="text-3xl font-semibold">
-                {stat.value}
-              </CardTitle>
-            </CardHeader>
-          </Card>
+          <div key={stat.label} className="space-y-0.5">
+            <p className="text-3xl font-semibold">{stat.value}</p>
+            <p className="text-sm text-muted-foreground">{stat.label}</p>
+          </div>
         ))}
       </div>
 
@@ -246,7 +241,7 @@ export default function WorkflowsPage() {
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-6">
             {backboneSteps.map((step, index) => (
               <div key={step.name} className="relative">
-                <div className="flex h-full flex-col gap-2 rounded-lg border border-border bg-muted/50 p-3">
+                <div className="flex h-full flex-col gap-2 rounded-lg bg-muted/50 p-3">
                   <div className="flex items-center gap-2">
                     <div className="flex h-6 w-6 items-center justify-center rounded-md bg-primary">
                       <step.icon className="h-3.5 w-3.5 text-primary-foreground" />
@@ -377,13 +372,12 @@ export default function WorkflowsPage() {
                         </p>
                       </div>
                     </div>
-                    <Separator className="lg:hidden" />
                     <div className="flex shrink-0 items-center justify-between gap-3 lg:justify-end">
                       <span className="text-xs text-muted-foreground">
                         {proposal.credits} credit
                       </span>
                       <div className="flex items-center gap-2">
-                        <Button variant="outline" size="sm">
+                        <Button variant="ghost" size="sm">
                           <X className="h-3.5 w-3.5" />
                           Skip
                         </Button>
