@@ -40,7 +40,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Search, Plus, Workflow, ArrowRight, Moon } from "lucide-react";
+import {
+  Search,
+  Plus,
+  Workflow,
+  ArrowRight,
+  Moon,
+  MoreHorizontal,
+} from "lucide-react";
 
 /* ------------------------------------------------------------------ */
 /*  Sample data — mirrors the CoPilot Campaigns screen                 */
@@ -66,11 +73,15 @@ const campaigns: Campaign[] = [
   { teamMember: "Gus Molina", name: "LION - Manual Mode", type: "Prospecting", invitesSent: 121, connectionRate: 25.6, replyRate: 41.9, status: "Active" },
 ];
 
-/** Colour-code a rate against a benchmark, like the CoPilot table. */
+/** Rates read as plain numbers; only above-benchmark values get a badge,
+ *  so the table isn't a wall of competing colour chips. */
 function RateBadge({ value }: { value: number }) {
-  const variant =
-    value === 0 ? "destructive" : value >= 20 ? "default" : "secondary";
-  return <Badge variant={variant}>{value}%</Badge>;
+  if (value >= 20) return <Badge variant="secondary">{value}%</Badge>;
+  return (
+    <span className={value === 0 ? "text-sm text-muted-foreground" : "text-sm"}>
+      {value}%
+    </span>
+  );
 }
 
 /* ------------------------------------------------------------------ */
@@ -244,7 +255,13 @@ export default function PlaygroundPage() {
                     <TableCell className="text-right">
                       <DropdownMenu>
                         <DropdownMenuTrigger asChild>
-                          <Button size="sm">Actions</Button>
+                          <Button
+                            variant="ghost"
+                            size="icon"
+                            aria-label={`Actions for ${campaign.name}`}
+                          >
+                            <MoreHorizontal className="h-4 w-4" />
+                          </Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
                           <DropdownMenuItem>Edit</DropdownMenuItem>
